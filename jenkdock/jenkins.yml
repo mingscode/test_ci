@@ -5,7 +5,7 @@ testdock:
   environment:
     ENV: PROD
     links:
-      - dnmonster
+      - "dnmonster"
 
 dnmonster:
   image: amouat/dnmonster:1.0
