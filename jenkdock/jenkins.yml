@@ -1,12 +1,12 @@
 testdock:
   build: .
   expose:
-  - "9090"
+    - "9090"
   environment:
     ENV: PROD
-  link:
-  - dnmonster
-  - redis
+    links:
+      - dnmonster
+      - redis
 
 dnmonster:
   image: amouat/dnmonster:1.0
