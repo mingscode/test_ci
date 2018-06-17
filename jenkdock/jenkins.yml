@@ -4,8 +4,8 @@ testdock:
     - "9090"
   environment:
     ENV: PROD
-    links:
-      - "dnmonster"
+  links:
+      - dnmonster
 
 dnmonster:
   image: amouat/dnmonster:1.0
