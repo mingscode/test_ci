@@ -6,7 +6,6 @@ testdock:
     ENV: PROD
     links:
       - dnmonster
-      - redis
 
 dnmonster:
   image: amouat/dnmonster:1.0
